@@ -1,6 +1,13 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import { createApp } from 'vue'
+import App from './App.vue'
+import store from './store/index'
+import router from './router/index'
 
-createApp(App).use(store).use(router).mount("#app");
+import './main.css'
+
+console.log(router);
+
+const AppVue = createApp(App)
+    .use(router)
+    .use(store)
+    .mount('#app')

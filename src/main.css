@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    @apply block w-full leading-10 text-center border-b-2;
+}
+
+a {
+    @apply font-bold;
+}
+a.router-link-exact-active {
+    @apply text-green-600;
+}
+
+#view {
+    @apply p-2;
+}
+
+h1,.h1 { font-size:1.2em;font-weight:bold; }
+h2,.h2 { font-size:1.1em; }
+h4,.h4 { font-size:0.9em; }
+h5,.h5 { font-size:0.8em; }
+
+a {
+    @apply cursor-pointer;
+}
+
+input, select {
+    @apply border-b-2 outline-none w-full;
+}
